@@ -34,16 +34,12 @@ src/
 🚀 Como rodar
 Instalar dependências com npm install
 
-# Adicionar suas fotos em src/assets/
+Adicionar suas fotos em src/assets/
 
-# Renomeie para: photo1.jpg, photo2.jpg, photo3.jpg, photo4.jpg
+Renomeie para: photo1.jpg, photo2.jpg, photo3.jpg, photo4.jpg
 
-# Iniciar servidor de desenvolvimento
+Iniciar servidor de desenvolvimento com npm run dev
 
-npm run dev
+Gerar build de produção com npm run build
 
-# Gerar build de produção
-
-npm run build
-
-Feito com ❤️ para Ana Clara.
+# Feito com ❤️ para Ana Clara.
