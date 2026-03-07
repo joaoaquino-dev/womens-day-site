@@ -1,0 +1,78 @@
+@import "tailwindcss";
+
+@theme {
+  --color-rose: #c9748a;
+  --color-blush: #f2d2da;
+  --color-cream: #fdf6f0;
+  --color-burgundy: #7a2d45;
+  --color-gold: #c9a96e;
+  --color-dark: #1a0a10;
+  --color-dark-mid: #2d0818;
+
+  --font-playfair: "Playfair Display", serif;
+  --font-cormorant: "Cormorant Garamond", serif;
+  --font-montserrat: "Montserrat", sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  scroll-snap-type: y mandatory;
+}
+
+body {
+  background-color: var(--color-dark);
+  overflow-x: hidden;
+}
+
+section {
+  scroll-snap-align: start;
+}
+
+@keyframes fadeUp {
+  from {
+    opacity: 0;
+    transform: translateY(24px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes pulse-heart {
+  0%, 100% { transform: scale(1); }
+  50% { transform: scale(1.2); }
+}
+
+@keyframes bounce-hint {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(8px); }
+}
+
+@keyframes fall {
+  0%   { transform: translateY(0) rotate(0deg) translateX(0); opacity: 0; }
+  5%   { opacity: 0.8; }
+  90%  { opacity: 0.6; }
+  100% { transform: translateY(110vh) rotate(720deg) translateX(80px); opacity: 0; }
+}
+
+.animate-fade-up {
+  animation: fadeUp 1s ease forwards;
+}
+
+.animate-pulse-heart {
+  animation: pulse-heart 2s ease-in-out infinite;
+}
+
+.animate-bounce-hint {
+  animation: bounce-hint 2s ease-in-out infinite;
+}
+
+.petal {
+  position: absolute;
+  top: -40px;
+  background: radial-gradient(ellipse at 30% 30%, #f2b8c6, #c97090aa);
+  border-radius: 50% 0 50% 0;
+  opacity: 0;
+  animation: fall linear infinite;
+}
