@@ -1,12 +1,12 @@
-import { useMemo } from 'react'
+import { useMemo } from "react";
 
 interface PetalConfig {
-  id: number
-  left: string
-  duration: string
-  delay: string
-  rotate: string
-  size: string
+  id: number;
+  left: string;
+  duration: string;
+  delay: string;
+  rotate: string;
+  size: string;
 }
 
 export function Petals() {
@@ -18,8 +18,8 @@ export function Petals() {
       delay: `${Math.random() * 12}s`,
       rotate: `${Math.random() * 360}deg`,
       size: `${8 + Math.random() * 10}px`,
-    }))
-  }, [])
+    }));
+  }, []);
 
   return (
     <div className="fixed inset-0 pointer-events-none z-0 overflow-hidden">
@@ -38,5 +38,5 @@ export function Petals() {
         />
       ))}
     </div>
-  )
+  );
 }
