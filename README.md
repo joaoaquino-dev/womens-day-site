@@ -1,3 +1,5 @@
+[Preview](./screenshot.png)
+
 🌸 Dia das Mulheres — Site Presente
 Uma landing page pessoal criada como presente para minha esposa no Dia Internacional da Mulher (8 de março).
 
